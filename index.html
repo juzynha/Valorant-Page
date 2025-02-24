@@ -1,11 +1,53 @@
-<?php
-require 'includes/header.html';
-require 'includes/menu.html';
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="midia/imagens/logos/Valorant logotipo.svg" width="112px"></a>
+        <ul>
+            <li><a href="">agentes</a></li>
+            <li><a href="">mapas</a></li>
+            <li><a href="">armas</a></li>
+            <li><a href="">midia</a></li>
+        </ul>
+        <button class="btn-jogue-agora">Jogue agora</button>
+        <button id="btn_mobile">
+            <img src="midia/imagens/icons/icon-menu.svg" width="45px">
+        </button>
+    </nav>
+    <div id="menu_mobile_container">
+        <div class="menu-mobile">
+            <div class="menu-header">
+                <img src="midia/imagens/logos/Valorant-logo.svg" width="40px">
+                <button id="close_btn">
+                    <img src="midia/imagens/icons/icon-close.svg" width="20px">
+                </button>
+            </div>
+            <div class="menu-body">
+                <ul>
+                    <li><a href="" >agentes</a></li>
+                    <li><a href="">mapas</a></li>
+                    <li><a href="">armas</a></li>
+                    <li><a href="">mídia</a></li>
+                </ul>
+                <button class="btn-jogue-agora">Jogue agora</button>  
+            </div> 
+        </div>
+    </div>
+</header>
 
 <section class="hero">
     <video src="midia/videos/video-hero.mp4" autoplay loop muted playsinline></video>
 </section>
+
 <main>
     <section class="banner">
         <img src="midia/imagens/background/image1.png" class="background">
@@ -39,6 +81,10 @@ require 'includes/menu.html';
                     </div>
                     <h4>Temporada 2025 // Atualizações Dev</h4>
                     <p>Confira mudanças nos Agentes, balanceamento, ranqueadas, replays e muito mais.</p>
+                </div>
+                <div class="setas">
+                    <img src="midia/icons/seta-left.svg" class="seta-left">
+                    <img src="midia/icons/seta-right.svg" class="seta-right">
                 </div>
             </div>
         </div>
@@ -97,6 +143,36 @@ require 'includes/menu.html';
     </section>
 </main>
 
-<?php
-require 'includes/footer.html';
-?>
+<footer>
+    <div class="redes-sociais">
+        <div class="box-icon">
+            <img src="midia/imagens/icons/facebook.svg">
+        </div>
+        <div class="box-icon">
+            <img src="midia/imagens/icons/youtube.svg">
+        </div>
+        <div class="box-icon">
+            <img src="midia/imagens/icons/instagram.svg">
+        </div>
+        <div class="box-icon">
+            <img src="midia/imagens/icons/X.svg">
+        </div>
+        <div class="box-icon">
+            <img src="midia/imagens/icons/discord.svg">
+        </div>
+    </div>
+    <img src="midia/imagens/logos/riot-games-logo.svg">
+    <p>&copy 2020-2025 Riot Games, Inc. RIOT GAMES, VALORANT e todos os logotipos associados são marcas comerciais, marcas de serviço e/ou marcas registradas da Riot Games, Inc.</p>
+    <div class="links">
+        <a href="">política de privacidade</a>
+        <a href="">termos de serviço</a>
+        <a href="">preferência de cookies</a>
+    </div>
+    <div class="faixa-etaria">
+        <img src="midia/imagens/image-faixa-etaria.png">
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -29,76 +29,15 @@ button {
     border: none;
     width: auto;
     display: inline-block;
+    background: transparent;
     font-family: 'DINNextW1G-Regular';
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 1rem 3rem;
-    background-color: #111111;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-}
-
-nav li a{
-    position: relative;
-    text-transform: uppercase;
-    font-family: 'Tungsten';
-    font-size: 46px;
-}
-
-nav ul li a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transform: scaleX(0); 
-    transition: transform 0.2s ease-in-out;
-}
-
-nav ul li a:hover::after {
-    transform: scaleX(1);
-}
-
-nav button {
-    padding: 0.8rem 1.25rem;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #FF3844, #FF7361);
-    color: #111111;
-    border-radius: 15px;
-}
-
-nav button:hover {
-    padding: 0.8rem 1.25rem;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #FF3844 , #FF7361);
-    color: #ECE8E1;
-    border-radius: 15px;
-    transition: 0.5s ease;
-    cursor: pointer;
 }
 
 .hero {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 70vh;
+    max-height: 70vh;
     overflow: hidden;
 }
 
@@ -120,13 +59,14 @@ nav button:hover {
     width: 100%;
     height: 100%;
     z-index: -1; 
+    object-fit: cover;
 }
 
 .ultimas-noticias {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 3rem 3rem;
+    padding: 0rem 3rem;
     gap: 2rem;
 }
 
@@ -138,15 +78,39 @@ nav button:hover {
 }
 
 .cards-container {
+    position: relative;
     display: flex;
-    justify-content: center;
+    width: 100%;
     gap: 2rem;
 }
 
 .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     height: auto;
+}
+
+.setas {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-self: center;
+    z-index: 100;
+    padding: 0 1rem;
+
+}
+
+.setas img {
+    width: 110px;
+}
+
+.seta-left {
+    left: 0;
+}
+
+.seta-right {
+    right: 0;
 }
 
 .tag {
@@ -191,6 +155,24 @@ nav button:hover {
     justify-content: center;
 }
 
+@media  screen and (max-width: 1300px) {
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .content-text {
+        max-width: 100%;
+    }
+
+    .content video {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .content-text span {
     text-transform: uppercase;
     font-family: 'Tungsten';
@@ -217,15 +199,12 @@ nav button:hover {
     background-color: #0F1923;
     color: #ECE8E1;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .button-azul:hover {
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 1rem 1.5rem;
     background-color: #ECE8E1;
     color: #0F1923;
-    transition: 0.5s;
 }
 
 .button-vermelho {
@@ -235,15 +214,12 @@ nav button:hover {
     background-color: #F14352;
     color: #ECE8E1;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .button-vermelho:hover {
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 1rem 1.5rem;
     background-color: #0F1923;
     color: #ECE8E1;
-    transition: 0.5s;
 }
 
 .content video {
