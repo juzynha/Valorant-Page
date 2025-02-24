@@ -1,0 +1,344 @@
+@import url(https://db.onlinewebfonts.com/c/7bb508fd7255ec38b6f29cb4cf8668cf?family=DINNextW1G-Regular);
+@import url(https://db.onlinewebfonts.com/c/500000b38ae43ab9a1b11372480b6b48?family=DINNextW1G-Bold);
+@import url(https://db.onlinewebfonts.com/c/b621d1ffb46493164fd62fb7a83ab0ff?family=Mark+W05+Medium);
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('fontes/Tungsten Font/Tungsten-Bold.woff') format('woff');
+    src: url('fontes/Tungsten Font/Tungsten-Bold.ttf') format('ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'DINNextW1G-Regular';
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    width: auto;
+    display: inline-block;
+    font-family: 'DINNextW1G-Regular';
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 1rem 3rem;
+    background-color: #111111;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav li a{
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Tungsten';
+    font-size: 46px;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav button {
+    padding: 0.8rem 1.25rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #FF3844, #FF7361);
+    color: #111111;
+    border-radius: 15px;
+}
+
+nav button:hover {
+    padding: 0.8rem 1.25rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #FF3844 , #FF7361);
+    color: #ECE8E1;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    min-height: 40rem;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.ultimas-noticias {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 3rem;
+    gap: 2rem;
+}
+
+.ultimas-noticias h3{
+    font-family: 'Tungsten';
+    font-size: 48px;
+    color: #0F1923;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    display: grid;
+    gap: 0.5rem;
+    height: auto;
+}
+
+.tag {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0F1923;
+}
+
+.tag span {
+    text-transform: uppercase;
+    color: #FF4655;
+    font-family: 'DINNextW1G-Bold';
+}
+
+.card h4 {
+    color: #0F1923;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    color: #0F1923;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content-text span {
+    text-transform: uppercase;
+    font-family: 'Tungsten';
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.content-text p {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 40rem;
+}
+
+.destaque {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-azul {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    background-color: #0F1923;
+    color: #ECE8E1;
+    cursor: pointer;
+}
+
+.button-azul:hover {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    background-color: #ECE8E1;
+    color: #0F1923;
+    transition: 0.5s;
+}
+
+.button-vermelho {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    background-color: #F14352;
+    color: #ECE8E1;
+    cursor: pointer;
+}
+
+.button-vermelho:hover {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    background-color: #0F1923;
+    color: #ECE8E1;
+    transition: 0.5s;
+}
+
+.content video {
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+}
+
+.l-branco {
+    color: #ECE8E1 ;
+}
+
+.b-branco {
+    color: #ECE8E1 ;
+}
+
+.l-azul {
+    color: #0F1923;
+}
+
+.b-azul {
+    background-color: #0F1923;
+}
+
+.l-vermelho {
+    color: #F14352;
+}
+
+.b-vermelho {
+    background-color: #F14352;
+}
+
+footer {
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    background-color: #111111;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.redes-sociais {
+    display: flex;
+    max-height: 3.1;
+    gap: 1rem;
+}
+
+.box-icon {
+    background-color: #282828;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box-icon img {
+    width: 1.5rem;
+}
+
+footer p {
+    color: #737373;
+    max-width: 38rem;
+    font-size: 13px;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    font-family: 'Mark W05 Medium';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    gap: 2rem;
+}
+
+.links a{
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.links a:hover{
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.faixa-etaria {
+    background-color: #282828;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+}

@@ -1,0 +1,1 @@
+Esse site é uma "cópia" do site do Valorant, estou fazendo para treinar HTML, CSS e JS.
